@@ -7,8 +7,11 @@ using System.Windows.Forms;
 
 namespace MyProj
 {
+    
     class buttonhandler
     {
+        
+        
         public void button_clicked(object sender, EventArgs e)
         {
             
@@ -17,6 +20,7 @@ namespace MyProj
             {
                 case "yesButton":
                     MessageBox.Show("You clicked yes");
+
                     break;
 
                 case "noButton":

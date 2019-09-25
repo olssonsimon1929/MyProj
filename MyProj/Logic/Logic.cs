@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MyProj.Logic
 {
     
-    class Logic
+    public class Logic
     {
         private static int playerSum = 0;
         private static int dealerSum = 0;
