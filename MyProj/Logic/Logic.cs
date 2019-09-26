@@ -4,27 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyProj.Logic
+namespace MyProj
 {
     
     public class Logic
     {
-        private static int playerSum = 0;
-        private static int dealerSum = 0;
+        private int playerSum = 0;
+        private int dealerSum = 0;
         private static Random r;
 
         public Logic()
         {
             r = new Random();
+            playerSum = GetRandom();
+            dealerSum = GetRandom();
         }
 
-        public static int GetRandom()
+        private static int GetRandom()
         {
-            int rand = r.Next(0, 12);
+            int rand = r.Next(1, 12);
             return rand;
         }
 
-        public static int RunDealer()
+        public int RunDealer()
         {
             while(dealerSum < 17)
             {
@@ -33,7 +35,7 @@ namespace MyProj.Logic
             return dealerSum;
         }
 
-        public static int RunPlayer()
+        public int RunPlayer()
         {
             playerSum += GetRandom();
             return playerSum;

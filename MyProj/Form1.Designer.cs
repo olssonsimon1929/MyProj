@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            buttonhandler b = new buttonhandler();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -36,20 +37,22 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(170, 310);
-            this.button1.Name = "button1";
+            this.button1.Name = "yesButton";
             this.button1.Size = new System.Drawing.Size(117, 62);
             this.button1.TabIndex = 0;
             this.button1.Text = "Yes";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(b.button_clicked);
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(342, 310);
-            this.button2.Name = "button2";
+            this.button2.Name = "noButton";
             this.button2.Size = new System.Drawing.Size(117, 62);
             this.button2.TabIndex = 1;
             this.button2.Text = "No";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(b.button_clicked);
             // 
             // textBox1
             // 
